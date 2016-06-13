@@ -4,7 +4,12 @@
     <%= stylesheet_link_tag 'all', media: "all" %>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <meta name="author" content="Raymond Cox" />
+    <meta name="og:site_name" content="Raymond's blog & site" />
+    <meta name="og:type"content="blog"  />
+    <meta name="description" content="Read insightful development blog posts about Ember and other topics.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <title>Raymond's Site<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>

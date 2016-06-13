@@ -17,7 +17,7 @@ npm i ember-deploy-redis --save-dev
 npm i ember-deploy-s3 --save-dev
 ```
 
-[ember-cli-deploy](https://github.com/ember-cli-ember-cli-deploy) expects `config/deploy.js` to contain deployment settings that look like this
+[ember-cli-deploy](https://github.com/ember-cli/ember-cli-deploy) expects `config/deploy.js` to contain deployment settings that look like this
 
 ```javascript
 module.exports = {
