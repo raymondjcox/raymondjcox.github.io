@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <%= stylesheet_link_tag 'all', media: "all" %>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <title>Raymond's Site<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+        <div class="row">
+          <%= image_tag 'images/face.png', class: "img-circle pull-left face hidden-xs" %>
+          <h1 class="main-header">Raymond Cox</h1>
+          <h6 class="sub-header">My personal website and blog</h6>
+          <hr></hr>
+        </div>
+
+        <div class="row">
+          <ul class="list-inline top-nav">
+            <li><%= link_to 'Blog', '/' %></li>
+            <li><%= link_to 'About', '/about/' %></li>
+            <li><%= link_to 'Archive', '/archive' %></li>
+            <li><%= link_to 'Projects', '/projects' %></li>
+          </ul>
+        </div>
+        <div class="row">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

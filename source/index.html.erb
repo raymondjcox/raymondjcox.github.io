@@ -1,0 +1,27 @@
+---
+pageable: true
+per_page: 1
+---
+<% if paginate && num_pages > 1 %>
+  <p>Page <%= page_number %> of <%= num_pages %></p>
+
+  <% if prev_page %>
+    <p><%= link_to 'Previous page', prev_page %></p>
+  <% end %>
+<% end %>
+
+<div class="articles">
+  <% page_articles.each_with_index do |article, i| %>
+    <article>
+      <h3 class="main-header"><%= link_to article.title, article.path %></h3>
+      <h6 class="sub-header"><%= article.date.strftime('%b %e, %Y') %></h6>
+      <%= article.body %>
+    </article>
+  <% end %>
+</div>
+
+<% if paginate %>
+  <% if next_page %>
+    <p><%= link_to 'Next page', next_page %></p>
+  <% end %>
+<% end %>
