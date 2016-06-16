@@ -2,18 +2,11 @@
 pageable: true
 per_page: 1
 ---
-<% if paginate && num_pages > 1 %>
-  <p>Page <%= page_number %> of <%= num_pages %></p>
-
-  <% if prev_page %>
-    <p><%= link_to 'Previous page', prev_page %></p>
-  <% end %>
-<% end %>
 
 <div class="articles">
   <% page_articles.each_with_index do |article, i| %>
     <article>
-      <h2 class="main-header"><%= link_to article.title, article.path %></h2>
+      <h2 class="main-header"><a href="<%= article.url %>"><%= article.title %></a></h2>
       <h6 class="sub-header"><%= article.date.strftime('%b %e, %Y') %></h6>
       <%= article.body %>
     </article>
@@ -22,6 +15,9 @@ per_page: 1
 
 <% if paginate %>
   <% if next_page %>
-    <p><%= link_to 'Next page', next_page %></p>
+    <p class="pull-right"><%= link_to 'Next post', next_page %></p>
+  <% end %>
+  <% if num_pages > 1 && prev_page %>
+    <p class="pull-left"><%= link_to 'Previous post', prev_page %></p>
   <% end %>
 <% end %>
