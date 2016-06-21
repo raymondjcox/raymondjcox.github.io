@@ -6,18 +6,20 @@ per_page: 1
 <div class="articles">
   <% page_articles.each_with_index do |article, i| %>
     <article>
-      <h2 class="main-header"><a href="<%= article.url %>"><%= article.title %></a></h2>
+      <h2 class="main-header"><%= link_to article.title, article.url %></a></h2>
       <h6 class="sub-header"><%= article.date.strftime('%b %e, %Y') %></h6>
       <%= article.body %>
     </article>
   <% end %>
 </div>
 
-<% if paginate %>
-  <% if next_page %>
-    <p class="pull-right"><%= link_to 'Next post', next_page %></p>
+<div class="articles-navigation">
+  <% if paginate %>
+    <% if next_page %>
+      <p class="pull-right"><%= link_to 'Older post →', next_page %></p>
+    <% end %>
+    <% if num_pages > 1 && prev_page %>
+      <p class="pull-left"><%= link_to '← Newer post', prev_page %></p>
+    <% end %>
   <% end %>
-  <% if num_pages > 1 && prev_page %>
-    <p class="pull-left"><%= link_to 'Previous post', prev_page %></p>
-  <% end %>
-<% end %>
+</div>
