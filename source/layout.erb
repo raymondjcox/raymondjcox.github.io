@@ -5,32 +5,42 @@
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
     <meta name="author" content="Raymond Cox" />
-    <meta name="og:site_name" content="Raymond's blog & site" />
+    <meta name="og:site_name" content="Raymond Cox" />
     <meta name="og:type"content="blog"  />
     <meta name="description" content="Raymond Cox is a software engineer living in the Boston area. Read insightful development blog posts about Javascript, Ember and other topics.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <title>Raymond's Site<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel='stylesheet' type='text/css'>
+    <title>Raymond Cox<%= ' - ' + current_page.data.title unless current_page.data.title.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
   <body>
+    <%= partial(:navigation, locals: { class_names: ['mobile-nav', 'hide-nav', 'nav', 'text-center', 'nav-stacked', 'hidden-sm', 'hidden-md', 'hidden-lg'] }) %>
     <div class="container">
-      <div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+      <div class="col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-11">
         <div class="row">
-          <%= image_tag 'images/face.png', class: "img-circle pull-left face hidden-xs" %>
-          <h1 class="main-header">Raymond Cox</h1>
-          <h6 class="sub-header">My personal website and blog</h6>
+            <div class="col-md-10 col-sm-10 pull-left header-container">
+              <%= image_tag 'images/face.png', class: "img-circle pull-left face hidden-xs" %>
+              <h1 class="main-header">Raymond Cox</h1>
+              <h6 class="sub-header">My personal website and blog</h6>
+            </div>
+
+            <div class="col-xs-2 pull-right text-right hidden-sm hidden-md hidden-lg" style="margin-top:1.75em; padding-right: 0;">
+              <button class="btn btn-default mobile-hamburger">
+                <span class="fa fa-bars" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <div class="col-md-2 col-sm-2 social-icons hidden-xs text-right">
+              <a href="https://github.com/raymondjcox"><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.twitter.com/raymondcox"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="mailto:raymond@helios.raymondjcox.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="row">
           <hr></hr>
         </div>
-
         <div class="row">
-          <ul class="list-inline top-nav">
-            <li><%= link_to 'Blog', '/' %></li>
-            <li><%= link_to 'About', '/about/' %></li>
-            <li><%= link_to 'Archive', '/archive' %></li>
-            <li><%= link_to 'Projects', '/projects' %></li>
-          </ul>
+          <%= partial(:navigation, locals: { class_names: ['list-inline', 'top-nav', 'hidden-xs'] }) %>
         </div>
         <div class="row">
           <%= yield %>
@@ -43,5 +53,7 @@
       </div>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js'></script>
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <%= javascript_include_tag 'application' %>
   </body>
 </html>

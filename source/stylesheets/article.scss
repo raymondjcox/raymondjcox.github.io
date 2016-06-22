@@ -1,18 +1,28 @@
 .articles {
-  margin: 30px 0px;
-}
-
-.articles-navigation {
-  a {
-    font-size: 0.85em;
+  .articles-navigation {
+    a {
+      font-size: 0.85em;
+    }
   }
 }
 
 article {
+  padding-top: 40px;
   .main-header {
     font-weight: bold;
+    font-size: 1.80em;
+    margin-top: 0px;
+    a {
+      margin-top: 0;
+    }
   }
   .sub-header {
-    margin-bottom: 20px;
+    margin-bottom: 2.0em;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  article.no-pad-top-xs {
+    padding-top: 0px;
   }
 }

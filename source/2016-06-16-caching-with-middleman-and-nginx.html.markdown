@@ -1,13 +1,11 @@
 ---
-title: Caching with Middleman and Nginx
+title: Caching Middleman & Nginx
 date: 2016-06-16
 tags: caching nginx middleman fingerprint
 layout: post
 ---
 
-I recently setup a blog with Middleman served through Nginx. I always forget the best way to cache assets, so this is a nice reminder for me and anyone interested.
-
-In general you want to cache images, javascript, and css in the client users browser for a long time so no request has to be made. In nginx this is pretty simple to do
+I recently setup a blog with Middleman served through Nginx. I always forget the best way to cache assets, so this is a nice reminder for me and anyone interested. In general you want to cache images, javascript, and css in the client users browser for a long time so no request has to be made. In nginx this is pretty simple to do
 
 ```
   location ~* \.(?:ico|css|js|gif|jpe?g|png)$ {
