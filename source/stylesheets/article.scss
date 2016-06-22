@@ -24,5 +24,6 @@ article {
 @media (max-width: $screen-sm) {
   article.no-pad-top-xs {
     padding-top: 0px;
+    padding-bottom: 20px;
   }
 }
