@@ -11,12 +11,15 @@ ul.top-nav {
   background-color: #f8f8f8;
   overflow: hidden;
   transform: translateZ(0px);
+  .social-icons {
+    margin-top: 0px;
+  }
   &.hide-nav {
     transition: max-height 300ms;
     max-height: 0px;
   }
   &.show-nav {
     transition: max-height 300ms;
-    max-height: 162px;
+    max-height: 197px;
   }
 }

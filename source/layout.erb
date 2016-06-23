@@ -30,11 +30,7 @@
               </button>
             </div>
 
-            <div class="col-md-2 col-sm-2 social-icons hidden-xs text-right">
-              <a href="https://github.com/raymondjcox"><i class="fa fa-github" aria-hidden="true"></i></a>
-              <a href="https://www.twitter.com/raymondcox"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              <a href="mailto:raymond@helios.raymondjcox.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-            </div>
+            <%= partial(:social_icons, locals: { class_names: ['col-md-2', 'col-sm-2', 'hidden-xs', 'text-right'] }) %>
         </div>
         <div class="row">
           <hr></hr>
