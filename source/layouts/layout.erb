@@ -14,7 +14,7 @@
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
   <body>
-    <%= partial(:navigation, locals: { class_names: ['mobile-nav', 'hide-nav', 'nav', 'text-center', 'nav-stacked', 'hidden-sm', 'hidden-md', 'hidden-lg'] }) %>
+    <%= partial('partials/navigation', locals: { class_names: ['mobile-nav', 'hide-nav', 'nav', 'text-center', 'nav-stacked', 'hidden-sm', 'hidden-md', 'hidden-lg'] }) %>
     <div class="container">
       <div class="col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-11">
         <div class="row">
@@ -30,13 +30,13 @@
               </button>
             </div>
 
-            <%= partial(:social_icons, locals: { class_names: ['col-md-2', 'col-sm-2', 'hidden-xs', 'text-right'] }) %>
+            <%= partial('partials/social_icons', locals: { class_names: ['col-md-2', 'col-sm-2', 'hidden-xs', 'text-right'] }) %>
         </div>
         <div class="row">
           <hr></hr>
         </div>
         <div class="row">
-          <%= partial(:navigation, locals: { class_names: ['list-inline', 'top-nav', 'hidden-xs'] }) %>
+          <%= partial('partials/navigation', locals: { class_names: ['list-inline', 'top-nav', 'hidden-xs'] }) %>
         </div>
         <div class="row">
           <%= yield %>

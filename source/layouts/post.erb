@@ -1,7 +1,3 @@
 <% wrap_layout :layout do %>
-  <article>
-    <h2 class="main-header"><%= current_article.title %></h2>
-    <h5 class="sub-header"><%= current_article.date.strftime('%b %e, %Y') %></h5>
-    <%= yield %>
-  </article>
+  <%= partial('partials/article', locals: { article: current_article, class_names: nil }) %>
 <% end %>
