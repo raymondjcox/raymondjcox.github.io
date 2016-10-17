@@ -1,10 +1,26 @@
 ul.top-nav {
+  font-weight: 400;
   li {
     margin-right: 10px;
   }
 }
 .mobile-hamburger.btn.btn-default {
   outline: none;
+  border: none;
+}
+.mobile-hamburger {
+  height: 40px;
+  .bar {
+    border-radius: 3px; 
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-top: 4px;
+    &.first {
+      margin-top: 0px;
+    }
+  }
+  
 }
 .mobile-nav {
   position: relative;
@@ -12,11 +28,14 @@ ul.top-nav {
   overflow: hidden;
   transform: translateZ(0px);
   .social-icons {
-    font-size: 2.0em;
+    .social svg {
+      width: 1.75em;
+      height: 1.75em;
+    }
     a {
       margin: 0px 2.5vw;
     }
-    margin-top: 0px;
+    margin-top: 5px;
   }
   &.hide-nav {
     transition: max-height 300ms;
@@ -24,6 +43,6 @@ ul.top-nav {
   }
   &.show-nav {
     transition: max-height 300ms;
-    max-height: 203px;
+    max-height: 213px;
   }
 }

@@ -4,10 +4,72 @@
   margin-right: 20px;
   margin-top: 15px;
 }
+hr {
+  margin-bottom: 10px;
+}
+h1.main-header {
+  font-size:34px;
+  font-weight: 400;
+}
+
+.mobile-nav {
+  .social-icons .social {
+    svg path {
+      fill: #4A90E2;
+    }
+  }
+}
+
 .social-icons {
-  margin-top: 1.75em;
+  margin-top: 2.95em;
   padding-right: 0px;
-  font-size: 1.70em;
+  .social {
+    &:first-of-type {
+      margin-right: 5px;
+    }
+
+    &:last-of-type {
+      margin-left: 5px;
+    }
+    svg {
+      height: 1.5em;
+      width: 1.5em;
+      path {
+        fill: #8c8c8c;
+      }
+    }
+    &.github {
+      &:hover {
+        svg path {
+          transition: fill 1s ease;
+          fill: #000;
+        }
+      }
+    }
+    &.twitter {
+      &:hover {
+        svg path {
+          transition: fill 1s ease;
+          fill: #1DA1F2;
+        }
+      }
+    }
+    &.linkedin {
+      &:hover {
+        svg path {
+          transition: fill 1s ease;
+          fill: #1A85BC;
+        }
+      }
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &:focus {
+      outline: none;
+      text-decoration: none;
+    }
+  }
 }
 .header-container {
   padding-left: 0px;

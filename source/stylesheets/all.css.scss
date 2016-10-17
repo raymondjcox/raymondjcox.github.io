@@ -1,8 +1,31 @@
+body {
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+.container {
+  min-height: 90vh;
+}
+.about-wrapper {
+  margin-top: 40px;
+  .me-about {
+    padding-bottom: 40px;
+  }
+}
 @import 'bootstrap';
+p {
+  font-family: $font-family-serif;
+  line-height: 1.6;
+  font-size: 1.05em;
+  margin-bottom: 1em;
+}
 @import 'colors';
 @import 'variables';
 @import 'header';
 @import 'footer';
 @import 'article';
 @import 'navigation';
+@import 'archive';
 @import 'code';

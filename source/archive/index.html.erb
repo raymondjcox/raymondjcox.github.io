@@ -2,5 +2,16 @@
 title: Archive
 ---
 
-Archive goes here
-
+<div class="archive container-fluid">
+  <h2>Archive</h2>
+  <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+    <h3 class="text-center"><%= year %></h3>
+    <ul class="list-group ">
+      <% articles.each do |article| %>
+        <li class="list-group-item text-center">
+          <a href="<%= article.url %>"><%= article.title %></a> <span class="sub-header hidden-xs"><%= article.date.strftime('%b %e, %Y')%> </span>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>

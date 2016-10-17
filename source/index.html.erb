@@ -12,10 +12,10 @@ per_page: 2
 <div class="articles-navigation">
   <% if paginate %>
     <% if next_page %>
-      <p class="pull-right"><%= link_to 'Older post →', next_page %></p>
+      <div class="pull-right"><%= link_to 'Older post →', next_page %></div>
     <% end %>
     <% if num_pages > 1 && prev_page %>
-      <p class="pull-left"><%= link_to '← Newer post', prev_page %></p>
+      <div class="pull-left"><%= link_to '← Newer post', prev_page %></div>
     <% end %>
   <% end %>
 </div>
