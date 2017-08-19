@@ -9,7 +9,6 @@
     <meta name="og:type"content="blog"  />
     <meta name="description" content="Raymond Cox is a software engineer living in the Boston area. Read insightful development blog posts about Javascript, Ember and other topics.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <title>Raymond Cox<%= ' - ' + current_page.data.title unless current_page.data.title.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <script>
@@ -62,7 +61,8 @@
         </footer>
       </div>
     </div>
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_include_tag 'fastclick' %>
+    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "fastclick" %>
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
   </body>
 </html>

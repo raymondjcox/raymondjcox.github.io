@@ -23,7 +23,7 @@ With Middleman you need a way to bust the cache, you can do this with fingerprin
 ```
 
 Now to test
-`curl https://raymondjcox.com/images/face-d04725c4.png`
+`curl -I https://raymondjcox.com/images/face-d04725c4.png`
 returns
 
 ```
