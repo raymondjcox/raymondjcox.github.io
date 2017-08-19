@@ -3,10 +3,12 @@
 source 'https://rubygems.org'
 
 # Middleman Gems
-gem "middleman", "~> 4.1.9"
-gem "middleman-blog"
+gem "middleman", "~> 4.2.1"
+gem "middleman-blog", "~> 4.0"
 gem "middleman-livereload"
+gem 'middleman-minify-html'
 gem "middleman-syntax"
+gem 'middleman-autoprefixer', '~> 2.7'
 
 gem "redcarpet", '~> 3.3', '>= 3.3.3'
 
