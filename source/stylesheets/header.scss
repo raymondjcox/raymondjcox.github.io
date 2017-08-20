@@ -1,81 +1,65 @@
-.face {
-  width: 75px;
-  display: inline;
-  margin-right: 20px;
-  margin-top: 15px;
-}
-hr {
-  margin-bottom: 10px;
-}
-h1.main-header {
-  font-size:34px;
-  font-weight: 400;
-}
+.site-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $light-gray-color;
+  padding-bottom: 15px;
+  .social-icons {
+    margin-left: auto;
+    align-self: flex-start;
+    a {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin: 0px 1px;
+      transition: 1s fill;
+      &.social {
+        fill: $gray-color;
+      }
+      &:hover {
+        fill: $black-color;
+      }
+    }
+  }
 
-.mobile-nav {
-  .social-icons .social {
-    svg path {
-      fill: #4A90E2;
+  .site-logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+  }
+
+  .site-header-text {
+    margin-left: 20px;
+    .site-title {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin: 0px 0px 5px;
+    }
+    .site-description {
+      color: $gray-color;
+      font-size: .7rem;
+      font-weight: 300;
+      margin: 0px;
     }
   }
 }
 
-.sub-header {
-  font-weight: 100;
-}
-
-.social-icons {
-  margin-top: 2.95em;
-  padding-right: 0px;
-  .social {
-    &:first-of-type {
-      margin-right: 5px;
-    }
-
-    &:last-of-type {
-      margin-left: 5px;
-    }
-    svg {
-      height: 1.5em;
-      width: 1.5em;
-      path {
-        fill: #8c8c8c;
+@media (min-width: $screen-sm-min) {
+  .site-header {
+    .social-icons {
+      align-self: center;
+      a {
+        margin: 0px 2px;
+        width: 24px;
+        height: 24px;
       }
     }
-    &.github {
-      &:hover {
-        svg path {
-          transition: fill 1s ease;
-          fill: #000;
-        }
+    .site-header-text {
+      .site-title {
+        font-size: 2rem;
       }
-    }
-    &.twitter {
-      &:hover {
-        svg path {
-          transition: fill 1s ease;
-          fill: #1DA1F2;
-        }
+      .site-description {
+        font-size: .85rem;
       }
-    }
-    &.linkedin {
-      &:hover {
-        svg path {
-          transition: fill 1s ease;
-          fill: #1A85BC;
-        }
-      }
-    }
-    &:hover {
-      text-decoration: none;
-    }
-    &:focus {
-      outline: none;
-      text-decoration: none;
     }
   }
-}
-.header-container {
-  padding-left: 0px;
-  padding-right: 0px;
 }

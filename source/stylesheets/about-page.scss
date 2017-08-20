@@ -1,0 +1,31 @@
+.about-page {
+  .about-page-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .about-image {
+      align-self: flex-start;
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+    }
+  }
+}
+
+
+@media (min-width: $screen-md-min) {
+  .about-page {
+    .about-page-container {
+      flex-wrap: nowrap;
+      .about-image {
+        margin-right: 20px;
+      }
+      .about-description {
+        align-self: flex-start;
+        p {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}

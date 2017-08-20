@@ -1,0 +1,52 @@
+body {
+  text-rendering: optimizeLegibility;
+  font-family: $font-family-sans-serif;
+  color: $black-color;
+  background-color: white;
+  font-weight: 300;
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-sans-serif;
+}
+
+a {
+  color: $blue-color;
+  text-decoration: none;
+  &:hover {
+    color: $dark-blue-color;
+  }
+}
+
+p {
+  font-family: $font-family-serif;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.container {
+  margin: 10px 10px;
+}
+
+@media (min-width: $screen-sm-min) {
+  .container {
+    max-width: 700px;
+    margin: 10px auto;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .container {
+    max-width: 1000px;
+    margin: 10px auto;
+  }
+}

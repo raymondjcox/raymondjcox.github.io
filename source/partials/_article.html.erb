@@ -1,5 +1,5 @@
-<article class="<%= class_names.join(' ') unless class_names.nil? %>""">
-  <h6 class="sub-header"><%= article.date.strftime('%b %e, %Y') %></h5>
-  <h2 class="main-header"><%= link_to article.title, article.url %></h2>
+<article>
+  <div class="article-date"><%= article.date.strftime('%b %e, %Y') %></div>
+  <h2 class="article-title"><%= link_to article.title, article.url %></h2>
   <%= article.body %>
 </article>

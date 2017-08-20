@@ -1,48 +1,7 @@
-ul.top-nav {
-  font-weight: 300;
-  li {
-    margin-right: 10px;
-  }
-}
-.mobile-hamburger.btn.btn-default {
-  outline: none;
-  border: none;
-}
-.mobile-hamburger {
-  height: 40px;
-  .bar {
-    border-radius: 3px;
-    width: 20px;
-    height: 3px;
-    background-color: black;
-    margin-top: 4px;
-    &.first {
-      margin-top: 0px;
-    }
-  }
-
-}
-.mobile-nav {
-  position: relative;
-  background-color: #f8f8f8;
-  overflow: hidden;
-  transform: translateZ(0px);
-  .social-icons {
-    .social svg {
-      width: 1.75em;
-      height: 1.75em;
-    }
-    a {
-      margin: 0px 2.5vw;
-    }
-    margin-top: 5px;
-  }
-  &.hide-nav {
-    transition: max-height 300ms;
-    max-height: 0px;
-  }
-  &.show-nav {
-    transition: max-height 300ms;
-    max-height: 213px;
+.site-navigation {
+  display: flex;
+  margin: 10px 0px 40px;
+  a {
+    margin-right: 20px;
   }
 }
