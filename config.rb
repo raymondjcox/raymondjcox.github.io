@@ -14,6 +14,7 @@ set :relative_links, true
 ###
 
 activate :syntax
+activate :asset_hash
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true,
     :smartypants => true
@@ -58,11 +59,6 @@ end
 
 # Build-specific configuration
 configure :build do
-  # Minify CSS on build
   activate :minify_css
-
-  # Minify Javascript on build
   activate :minify_javascript
-  activate :asset_hash
-  activate :asset_host, :host => ''
 end
