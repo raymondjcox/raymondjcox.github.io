@@ -1,0 +1,7 @@
+img.lazy-img {
+  opacity: 1;
+  transition: opacity 0.5s;
+  &[data-src] {
+    opacity: 0;
+  }
+}
