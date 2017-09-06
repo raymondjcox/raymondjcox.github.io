@@ -1,4 +1,10 @@
 // Fonts
+@font-face {
+  font-family: 'Lora';
+  font-display: swap;
+  src: local('Lora'), url(https://fonts.gstatic.com/s/lora/v10/rAXKWvABQNHjPUk26ixVvvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+
 $font-family-serif: "Lora";
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
