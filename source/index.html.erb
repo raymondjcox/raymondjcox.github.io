@@ -3,11 +3,11 @@ pageable: true
 per_page: 2
 ---
 
-<div class="articles">
+<section class="articles">
   <% page_articles.each_with_index do |article, i| %>
     <%= partial("partials/article", locals: { article: article }) %>
   <% end %>
-</div>
+</section>
 
 <div class="articles-navigation">
   <% if paginate %>

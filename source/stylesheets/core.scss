@@ -21,8 +21,7 @@ a {
 
 p {
   font-family: $font-family-serif;
-  line-height: 1.7;
-  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 .pull-right {
@@ -46,7 +45,7 @@ p {
 
 @media (min-width: $screen-md-min) {
   .container {
-    max-width: 1000px;
+    max-width: 950px;
     margin: 10px auto;
   }
 }
