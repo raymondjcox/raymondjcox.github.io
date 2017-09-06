@@ -15,6 +15,7 @@ set :relative_links, true
 
 activate :syntax
 activate :asset_hash
+activate :minify_html
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true,
     :smartypants => true
