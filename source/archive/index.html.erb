@@ -2,8 +2,8 @@
 title: Archive
 ---
 
-<div class="archive container-fluid">
-  <h2 class="text-center">Archive</h2>
+<div class="archive-page">
+  <h2>Archive</h2>
   <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
     <h3 class="text-center"><%= year %></h3>
     <ul class="list-group ">

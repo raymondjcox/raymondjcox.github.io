@@ -5,7 +5,7 @@ tags: ember deploy
 layout: post
 ---
 
-Recently I had a problem where I would have to deploy my Rails app to deploy my Ember app. I found that Ember Deploy was the solution, I'll explain how it works and how I set it up! Ember Deploy is awesome, you should be using it if your deployment strategy is suboptimal.
+Recently I had a problem where I would have to deploy my Rails app to deploy my Ember app. I found that Ember Deploy was the solution. Ember Deploy is awesome, you should be using it if your deployment strategy is suboptimal.
 
 Ember Deploy is the methodology that your assets should go somewhere and your index.html should go somewhere. The assets typically go on S3, and the index needs to be served by your server (due to CORS restrictions) but can go anywhere usually Redis. Ember deploy allows a lot of nifty things like preview URL's, zero downtime and dynamically modifying index.html.
 

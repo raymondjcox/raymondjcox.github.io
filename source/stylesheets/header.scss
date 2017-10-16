@@ -1,15 +1,15 @@
 .site-header {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid $light-gray-color;
   padding-bottom: 15px;
   .social-icons {
     margin-left: auto;
-    align-self: flex-start;
     a {
       display: inline-block;
       width: 18px;
       height: 18px;
+      max-width: 5vw;
+      max-height: 5vw;
       margin: 0px 1px;
       transition: 1s fill;
       &.social {
@@ -22,13 +22,14 @@
   }
 
   .site-logo {
-    width: 75px;
-    height: 75px;
+    width: auto;
+    height: auto;
+    max-width: 20vw;
     border-radius: 100%;
   }
 
   .site-header-text {
-    margin-left: 20px;
+    margin-left: 15px;
     .site-title {
       font-size: 1.2rem;
       font-weight: 400;
@@ -45,6 +46,13 @@
 
 @media (min-width: $screen-sm-min) {
   .site-header {
+    .site-header-text {
+      margin-left: 20px;
+    }
+    .site-logo {
+      width: 75px;
+      height: 75px;
+    }
     .social-icons {
       align-self: center;
       a {

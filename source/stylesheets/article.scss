@@ -6,16 +6,28 @@ article {
   }
   .article-date {
     color: $gray-color;
-    font-size: .85rem;
+    font-size: .7rem;
   }
   .article-title {
-    font-weight: 700;
-    font-size: 2.2rem;
+    font-weight: 800;
+    font-size: 1.75rem;
     margin-top: 0px;
     margin-bottom: 0px;
     a {
       color: $black-color;
       margin-top: 0;
+    }
+  }
+}
+
+
+@media (min-width: $screen-sm-min) {
+  article {
+    .article-date {
+      font-size: .85rem;
+    }
+    .article-title {
+      font-size: 2.2rem;
     }
   }
 }

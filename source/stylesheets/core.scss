@@ -34,19 +34,19 @@ p {
 }
 
 .container {
-  margin: 10px 10px;
+  margin: 20px 20px;
 }
 
 @media (min-width: $screen-sm-min) {
   .container {
     max-width: 700px;
-    margin: 10px auto;
+    margin: 20px auto;
   }
 }
 
 @media (min-width: $screen-md-min) {
   .container {
     max-width: 950px;
-    margin: 10px auto;
+    margin: 20px auto;
   }
 }
