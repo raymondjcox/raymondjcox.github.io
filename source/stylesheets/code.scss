@@ -8,6 +8,14 @@ p {
     background-color: rgb(245, 245, 245);
   }
 }
+div.highlight {
+  border: 1px solid #E3EDF3;
+}
+pre.highlight {
+  padding: 5px;
+  margin: 0px;
+  border: none;
+}
 
 .highlight { background-color: rgb(245, 245, 245);}
 .highlight .hll { background-color: #ffffcc }
