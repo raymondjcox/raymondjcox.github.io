@@ -1,5 +1,12 @@
 <article>
   <div class="article-date"><%= article.date.strftime('%b %e, %Y') %></div>
-  <h2 class="article-title"><%= link_to article.title, article.url %></h2>
+  <h2 class="article-title">
+    <% if show_link %>
+      <%= link_to article.title, article.url %>
+    <% else %>
+      <%= article.title %>
+    <% end %>
+
+  </h2>
   <%= article.body %>
 </article>
