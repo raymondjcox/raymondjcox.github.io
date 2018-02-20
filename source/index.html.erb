@@ -1,21 +1,14 @@
 ---
-pageable: true
-per_page: 2
+title: About
 ---
 
-<div class="articles">
-  <% page_articles.each_with_index do |article, i| %>
-    <%= partial("partials/article", locals: { article: article, show_link: true }) %>
-  <% end %>
-</div>
-
-<div class="articles-navigation">
-  <% if paginate %>
-    <% if next_page %>
-      <div class="pull-right"><%= link_to 'Older post →', next_page %></div>
-    <% end %>
-    <% if num_pages > 1 && prev_page %>
-      <div class="pull-left"><%= link_to '← Newer post', prev_page %></div>
-    <% end %>
-  <% end %>
+<div class="about-page">
+  <div class="about-page-container">
+    <img data-src="<%= image_path('me-about.jpg') %>" alt="about image" class="about-image lazy-img" />
+    <div class="about-description">
+      <p>Welcome to my website! I'm a software engineer who loves writing code. I work full time for <a href="https://www.petpocketbook.com">PetPocketbook</a> as the tech lead, I also do some <a href="https://getwarped.co">consulting</a> on the side. </p>
+      <p>Here is my <a href="https://www.linkedin.com/in/raymond-cox-4a561342">LinkedIn</a> and <a href="/resume.pdf">Resume</a> in case you're interested in contacting me. I primarily do Ruby (Ruby on Rails) and Javscript (Ember.js) but I am open to any opportunity!</p>
+      <p>Other than software engineering, I bike, hike, and spend time with my <a href="https://jiayiwu.me">wife</a>!</p>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,21 @@
+---
+pageable: true
+per_page: 2
+---
+
+<div class="articles">
+  <% page_articles.each_with_index do |article, i| %>
+    <%= partial("partials/article", locals: { article: article, show_link: true }) %>
+  <% end %>
+</div>
+
+<div class="articles-navigation">
+  <% if paginate %>
+    <% if next_page %>
+      <div class="pull-right"><%= link_to 'Older post →', next_page %></div>
+    <% end %>
+    <% if num_pages > 1 && prev_page %>
+      <div class="pull-left"><%= link_to '← Newer post', prev_page %></div>
+    <% end %>
+  <% end %>
+</div>
