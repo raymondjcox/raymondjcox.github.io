@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://raymondjcox.com/</loc>
+  <lastmod>2018-03-05T02:40:46+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://raymondjcox.com/blog/</loc>
+  <lastmod>2018-03-05T02:40:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raymondjcox.com/archive/</loc>
+  <lastmod>2018-03-05T02:40:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raymondjcox.com/resume.pdf</loc>
+  <lastmod>2018-03-05T02:40:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raymondjcox.com/blog/2018/01/21/switching-to-google-cloud.html</loc>
+  <lastmod>2018-03-05T02:40:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://raymondjcox.com/blog/2017/09/26/homebrew-switch-and-pin.html</loc>
+  <lastmod>2018-03-05T02:40:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://raymondjcox.com/blog/blog/page/2/</loc>
+  <lastmod>2018-03-05T02:40:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://raymondjcox.com/blog/2016/09/28/ember-fastboot.html</loc>
+  <lastmod>2018-03-05T02:40:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://raymondjcox.com/blog/2016/06/16/caching-with-middleman-and-nginx.html</loc>
+  <lastmod>2018-03-05T02:40:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://raymondjcox.com/blog/2015/05/11/ember-deploy.html</loc>
+  <lastmod>2018-03-05T02:40:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://raymondjcox.com/blog/blog/page/3/</loc>
+  <lastmod>2018-03-05T02:40:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

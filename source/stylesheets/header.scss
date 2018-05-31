@@ -1,9 +1,17 @@
 .site-header {
-  display: flex;
+  display: grid;
   align-items: center;
   padding-bottom: 15px;
+  grid-template-columns: minmax(250px, auto) 80px;
+  .left-container {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: grid;
+    grid-template-columns: 75px 220px;
+    align-items: center;
+    grid-gap: 20px;
+  }
   .social-icons {
-    margin-left: auto;
     a {
       display: inline-block;
       width: 18px;
@@ -22,14 +30,12 @@
   }
 
   .site-logo {
-    width: auto;
-    height: auto;
-    max-width: 20vw;
+    width: 75px;
+    height: 75px;
     border-radius: 100%;
   }
 
   .site-header-text {
-    margin-left: 15px;
     .site-title {
       font-size: 1.2rem;
       font-weight: 400;
@@ -46,27 +52,23 @@
 
 @media (min-width: $screen-sm-min) {
   .site-header {
+    grid-template-columns: minmax(315px, auto) 100px;
     .site-header-text {
-      margin-left: 20px;
+      .site-title {
+        font-size: 2rem;
+      }
+      .site-description {
+        font-size: .8rem;
+      }
     }
     .site-logo {
       width: 75px;
       height: 75px;
     }
     .social-icons {
-      align-self: center;
       a {
-        margin: 0px 2px;
         width: 22px;
         height: 22px;
-      }
-    }
-    .site-header-text {
-      .site-title {
-        font-size: 2rem;
-      }
-      .site-description {
-        font-size: .85rem;
       }
     }
   }
