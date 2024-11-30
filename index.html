@@ -5,25 +5,31 @@
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>Raymond Cox</title>
+   <script>
+      document.documentElement.classList.toggle(
+         'dark',
+         localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      )
+   </script>
 </head>
 
-<body
-   class="bg-gray-100 text-gray-900 align-middle min-h-dvh flex items-center justify-center dark:bg-slate-900 dark:text-white">
-   <div class="mx-auto">
+<body class="bg-gray-100 text-gray-900 align-middle min-h-dvh flex flex-col dark:bg-slate-900 dark:text-white">
+   <header class="text-lg font-bold w-full text-right"></header>
+   <main class="mx-auto flex-grow flex flex-col justify-center">
       <h1 class="text-4xl font-bold mb-2">Hello, I'm RJ 👋</h1>
       <p class="text-md md:text-lg">I'm a software engineer. I like to build things.</p>
-      <p class="text-md md:text-lg">I currently work as an software engineer at <a
+      <p class="text-md md:text-lg">I currently work as a software engineer at <a
             class="font-semibold underline decoration-yellow-400 underline-offset-4 decoration-2 hover:decoration-4"
             href="https://ramp.com">Ramp</a>.
       </p>
-      <p class="text-md md:text-lg">you can find me on <a
+      <p class="text-md md:text-lg">You can find me on <a
             class="font-semibold underline decoration-blue-300 underline-offset-4 decoration-2 hover:decoration-4"
             href="https://bsky.app/profile/raymondcox.me">Bluesky</a>, <a
             class="font-semibold underline decoration-blue-600 underline-offset-4 decoration-2 hover:decoration-4"
             href="https://www.linkedin.com/in/raymond-cox-4a561342/">LinkedIn</a> and <a
             class="font-semibold underline decoration-black-400 dark:decoration-white underline-offset-4 decoration-2 hover:decoration-4"
             href="https://github.com/raymondjcox">GitHub</a>.</p>
-   </div>
+   </main>
    <script type="module" src="/src/main.ts"></script>
 </body>
 
