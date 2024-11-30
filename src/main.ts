@@ -19,6 +19,7 @@ function addThemeSwitcher() {
        </svg>`;
 
   const themeSwitcher = document.createElement("button");
+  themeSwitcher.ariaLabel = "Switch theme";
   themeSwitcher.id = "theme-switcher";
   themeSwitcher.className = "py-2 px-2";
   themeSwitcher.innerHTML = document.documentElement.classList.contains("dark")
